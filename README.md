@@ -1,1 +1,1 @@
-Version 0.1 de mi pagina web de videojuegos.
+Version 0.1 alpha de mi pagina web de videojuegos.
