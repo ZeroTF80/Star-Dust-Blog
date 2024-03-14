@@ -1,5 +1,5 @@
 {// Update the document title
-  document.title = 'Blog Honkai Star Rail';
+  document.title = 'StarDust Blog';
 }
 
 // Garantiza que todos los elementos HTML se carguen antes de ejecutar el código JavaScript
