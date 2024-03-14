@@ -73,7 +73,7 @@ window.onload = function() {
   const talentoNombre = document.getElementById('talentoNombre');
   talentoNombre.classList.add('indent')
   talentoNombre.classList.add('TalentoNombre-title');
-  talentoNombre.textContent = 'Talento';
+  talentoNombre.textContent = 'Talento Nvl 12';
 
   const talentoCaracterísticas= document.getElementById('talentoCaracterísticas');
   talentoCaracterísticas.classList.add('indent');
