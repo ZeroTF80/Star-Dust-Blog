@@ -1,20 +1,128 @@
-.Encabezado-title {
-    font-size: 60px;
-  }
-.Habilidades-title {
-    font-size: 36px;
-  }
+/* Color de fondo */
+body {
+  background-color: #D3D3D3;
+}
 
-  /* Style for TituloUnos header */
-header#Personajes {
+/*Para que el texto no ande pegado a la izquierda */
+.indent {
+  padding-left: 15px;
+}
+
+/* Restablecimiento espacio, borde de los elementos */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Diseño del titulo */
+header {
+  background-color: #333;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Color del titulo*/
+header h1 {
+  color: #fff;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+/* Diseño del apartado de arriba */
+nav {
+  background-color: #444;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+/* Ubicación del apartado de arriba (Arriba, abajo*/
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+/* Ubicación del apartado de arriba (Izquierda, derecha) */
+nav ul li {
+  padding: 0 20px;
+}
+
+/* Color del apartado de arriba */
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Tamaño de los titulos */
+.Seele-title {
+    font-size: 80px;
+    color: #fff;
+    height: 50px;
+}
+
+/* Front Habilidades */
+header#Habilidades {
   background-color: transparent;
-  height: 50px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-
-header#Personajes h1 {
+header#Habilidades h1 {
   font-size: 50px;
-  color: #fff;
+  color: #000000;
+  margin-bottom: -30px;
+}
+
+.Habilidad1Nombre-title {
+  font-size: 30px;
+  height: 10px;
+  color: #875cc8;
+}
+
+.Habilidad1Características-title {
+  font-size: 18px;
+  height: 10px;
+  color: #53229c;
+}
+
+.Habilidad2Nombre-title {
+  font-size: 30px;
+  height: 10px;
+  color: #875cc8;
+}
+
+.Habilidad2Características-title {
+  font-size: 18px;
+  height: 10px;
+  color: #53229c;
+}
+
+.Habilidad3Nombre-title {
+  font-size: 30px;
+  height: 10px;
+  color: #875cc8;
+}
+
+.Habilidad3Características-title {
+  font-size: 18px;
+  height: 10px;
+  color: #53229c;
+}
+
+.TalentoNombre-title {
+  font-size: 30px;
+  height: 10px;
+  color: #875cc8;
+}
+
+.TalentoCaracterísticas-title {
+  font-size: 18px;
+  height: 10px;
+  color: #53229c;
 }
