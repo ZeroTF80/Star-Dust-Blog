@@ -2,44 +2,43 @@
   document.title = 'Blog Honkai Star Rail';
 }
 
-{// Set the background color
-document.body.style.backgroundColor = 'gray';
-}
+// Garantiza que todos los elementos HTML se carguen antes de ejecutar el código JavaScript
+window.onload = function() {
 
-{// Encabezado
+ {// Encabezado
   const header = document.getElementById('Encabezado');
   const Encabezado = document.createElement('h1');
   Encabezado.classList.add('Encabezado-title');
   header.appendChild(Encabezado);
   Encabezado.textContent = 'Star Dust Blog';
-}
+ }
 
-{// TituloUno
+ {// TituloUno HsR
   const header = document.getElementById('TituloUno');
   const TituloUno = document.createElement('h1');
   TituloUno.classList.add('TituloUno-title');
   header.appendChild(TituloUno);
   TituloUno.textContent = 'Honkai Star Rail';
-}
+ }
 
-{// Parrafos
-  window.onload = function() {
-    const parrafo = document.getElementById('miParrafo');
-    parrafo.textContent = 'Personajes';
+ {// Categorías HsR
+  const damageDealer = document.getElementById('Damage Dealer');
+  damageDealer.textContent = 'Damage Dealer';
   
-    const parrafos = document.getElementById('segundoParrafo');
-    parrafos.textContent = 'Holiwis';
+  const specialist = document.getElementById('Specialist');
+  specialist.textContent = 'Specialist';
 
-    const header = document.getElementById('Personajes');
-    const personajes = document.createElement('h1');
-    personajes.classList.add('Personajes-title');
-    header.appendChild(personajes);
-    personajes.textContent = 'Personajes';
-  }
-}
+  const amplifier = document.getElementById('Amplifier');
+  amplifier.textContent = 'Amplifier';
 
-{// Define a function to run all the code at once
-  Encabezado();
-  TituloUno();
-  Parrafos();
+  const sustain = document.getElementById('Sustain');
+  sustain.textContent = 'Sustain';
+ }
+ {// TituloDos Personajes HsR
+ const header = document.getElementById('Personajes');
+ const personajes = document.createElement('h1');
+ personajes.classList.add('Personajes-title');
+ header.appendChild(personajes);
+ personajes.textContent = 'Personajes';
+ }
 }
