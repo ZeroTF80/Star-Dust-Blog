@@ -1,0 +1,75 @@
+/* Restablecimiento espacio, borde de los elementos */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Diseño del titulo */
+header {
+  background-color: #333;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Color del titulo*/
+
+header h1 {
+  color: #fff;
+  font-size: 36px;
+}
+
+/* Diseño del apartado de arriba */
+nav {
+  background-color: #444;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+/* Ubicación del apartado de arriba (Arriba, abajo*/
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+/* Ubicación del apartado de arriba (Izquierda, derecha) */
+
+nav ul li {
+  padding: 0 20px;
+}
+
+/* Color del apartado de arriba */
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* largo del texto */
+
+.Encabezado-title {
+    font-size: 60px;
+}
+.TituloUno-title {
+    font-size: 36px;
+}
+
+/* Style for TituloUnos header */
+header#Personajes {
+  background-color: transparent;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header#Personajes h1 {
+  font-size: 50px;
+  color: #fff;
+}

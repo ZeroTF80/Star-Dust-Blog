@@ -1,0 +1,20 @@
+.Encabezado-title {
+    font-size: 60px;
+  }
+.Habilidades-title {
+    font-size: 36px;
+  }
+
+  /* Style for TituloUnos header */
+header#Personajes {
+  background-color: transparent;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header#Personajes h1 {
+  font-size: 50px;
+  color: #fff;
+}
