@@ -21,13 +21,13 @@ window.onload = function() {
  }
 
  {// Primera habilidad
-   const habilidad1Nombre= document.getElementById('primeraHabilidadNombre');
+   const habilidad1Nombre = document.getElementById('primeraHabilidadNombre');
    habilidad1Nombre.classList.add('indent');
    habilidad1Nombre.classList.add('Habilidad1Nombre-title');
    habilidad1Nombre.textContent = '1. Trancazo Nvl 7';
   
 
-   const habilidad1Características= document.getElementById('primeraHabilidadCaracterísticas');
+   const habilidad1Características = document.getElementById('primeraHabilidadCaracterísticas');
    habilidad1Características.classList.add('indent');
    habilidad1Características.classList.add('Habilidad1Características-title');
    habilidad1Características.textContent = 'ATQ individual | Recarga de energía 20 | Ruptura 30';
@@ -38,7 +38,7 @@ window.onload = function() {
  }
  
  {// Segunda habilidad
-   const habilidad2Nombre= document.getElementById('segundaHabilidadNombre');
+   const habilidad2Nombre = document.getElementById('segundaHabilidadNombre');
    habilidad2Nombre.classList.add('indent');
    habilidad2Nombre.classList.add('Habilidad2Nombre-title');
    habilidad2Nombre.textContent = '2. Hoja envainada Nvl 12';
@@ -54,7 +54,7 @@ window.onload = function() {
   }
 
  {// Tercera habilidad
-  const habilidad3Nombre= document.getElementById('terceraHabilidadNombre');
+  const habilidad3Nombre = document.getElementById('terceraHabilidadNombre');
   habilidad3Nombre.classList.add('indent');
   habilidad3Nombre.classList.add('Habilidad3Nombre-title');
   habilidad3Nombre.textContent = '3. Mariposa desbocada Nvl 12';
@@ -83,6 +83,20 @@ window.onload = function() {
   const talento = document.getElementById('Talento');
   talento.classList.add('indent');
   talento.innerHTML = `Al eliminar a un objetivo enemigo usando su ATQ básico, habilidad básica o habilidad definitiva, obtiene inmediatamente<br> un turno adicional y entra en un estado potenciado. Este estado hace que el daño de los ataques de Seele aumente en un 88% <br> durante 1 turno. <br> Los enemigos eliminados durante el turno adicional obtenido con su talento Reaparición no activarán el talento otra vez.`;
+ }
+ {// Técnica
+  const técnicaNombre = document.getElementById('técnicaNombre');
+  técnicaNombre.classList.add('indent');
+  técnicaNombre.classList.add('TécnicaNombre-title');
+  técnicaNombre.textContent = 'Ilusión fantasmal';
 
+  const técnicaCaracterísticas= document.getElementById('técnicaCaracterísticas');
+  técnicaCaracterísticas.classList.add('indent');
+  técnicaCaracterísticas.classList.add('TécnicaCaracterísticas-title');
+  técnicaCaracterísticas.textContent = 'Potenciación';
+
+  const Técnica = document.getElementById('Técnica');
+  Técnica.classList.add('indent');
+  Técnica.innerHTML = `Tras usar la técnica, Seele obtiene Invisibilidad durante 20 s. Mientras está en el estado de Invisibilidad, Seele no puede <br> ser detectada por los enemigos. <br> Al entrar en combate tras atacar a un enemigo, Seele entra en el estado potenciado inmediatamente.`;
  }
 }
