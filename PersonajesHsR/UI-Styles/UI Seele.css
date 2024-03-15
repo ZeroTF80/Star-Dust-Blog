@@ -1,6 +1,21 @@
-/* Color de fondo */
-body {
-  background-color: #D3D3D3;
+body.background-container {
+  background-image: url('../../Img/BackgroundHsR.jpg');
+  background-color: rgba(7, 12, 11, 0.5);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px); /* For Safari */
+  color: white;
+}
+
+.transparent-text {
+  color: white;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 20%;
+  margin: 1 auto;
+  text-align: left; /* align the text to the left */
 }
 
 /*Para que el texto no ande pegado a la izquierda */
@@ -58,11 +73,12 @@ nav ul li a {
   text-decoration: none;
 }
 
+
 /* Tamaño de los titulos */
 .Seele-title {
-    font-size: 80px;
-    color: #fff;
-    height: 50px;
+  font-size: 80px;
+  color: #fff;
+  height: 50px;
 }
 
 /* Front Habilidades */
@@ -73,56 +89,59 @@ header#Habilidades {
   align-items: center;
   justify-content: flex-start;
 }
+
 header#Habilidades h1 {
   font-size: 50px;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: -30px;
 }
 
-.Habilidad1Nombre-title {
+/* Habilidades */
+.Habilidad1Nombre-title,
+.Habilidad2Nombre-title,
+.Habilidad3Nombre-title,
+.TalentoNombre-title,
+.TécnicaNombre-title {
   font-size: 30px;
   height: 10px;
-  color: #875cc8;
+  color: #17bdf0;
 }
 
-.Habilidad1Características-title {
+.Habilidad1Características-title,
+.Habilidad2Características-title,
+.Habilidad3Características-title,
+.TalentoCaracterísticas-title,
+.TécnicaCaracterísticas-title {
   font-size: 18px;
   height: 10px;
-  color: #53229c;
+  color: #2f90b7;
 }
 
-.Habilidad2Nombre-title {
-  font-size: 30px;
-  height: 10px;
-  color: #875cc8;
+footer {
+  background-color: #282828;
+  color: #fdfdfd;
+  text-align: center;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.Habilidad2Características-title {
-  font-size: 18px;
-  height: 10px;
-  color: #53229c;
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.Habilidad3Nombre-title {
-  font-size: 30px;
-  height: 10px;
-  color: #875cc8;
+.copyright {
+  margin: 0;
+  font-size: 0.8rem;
 }
 
-.Habilidad3Características-title {
-  font-size: 18px;
-  height: 10px;
-  color: #53229c;
-}
-
-.TalentoNombre-title {
-  font-size: 30px;
-  height: 10px;
-  color: #875cc8;
-}
-
-.TalentoCaracterísticas-title {
-  font-size: 18px;
-  height: 10px;
-  color: #53229c;
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  margin: 1rem 0;
+  width: 50%;
 }
