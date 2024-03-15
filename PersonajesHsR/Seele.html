@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="Seele" content="Datos, initial-scale=1.0">
-    <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    <link rel="stylesheet" type="text/css" href="UI-Styles/UI Seele.css">
-    <header id="Encabezado"></header>
-    <header id="Habilidades"></header>
+  <style>
+    body.background-container {
+     overflow-x: hidden;
+    }
+  </style>
+ <meta charset="UTF-8">
+ <meta name="Seele" content="Datos, initial-scale=1.0">
+  <nav>
+     <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+     </ul>
+  </nav>
+  <link rel="stylesheet" type="text/css" href="UI-Styles/UI Seele.css">
+  <header id="Encabezado"></header>
+  <header id="Habilidades"></header>
 </head>
-<body>
-    <script src="JS/Seele.js"></script>
+<body class="background-container">
+  <div class="background-container">
+    <p class="transparent-text">Este es el texto que quieres mostrar</p>
+</div>
+    <script src="JS/Seele.js"></script>  
     <p id="primeraHabilidadNombre"></p>
     <p id="primeraHabilidadCaracterísticas"></p>
     <p id="primeraHabilidad"></p>
@@ -28,5 +36,14 @@
     <p id="talentoNombre"></p>
     <p id="talentoCaracterísticas"></p>
     <p id="Talento"></p>
+    <p id="técnicaNombre"></p>
+    <p id="técnicaCaracterísticas"></p>
+    <p id="Técnica"></p>
+    <footer>
+      <div class="footer-content">
+      <hr>
+      <p class="copyright">© 2023 Mira. All rights reserved.</p>
+      </div>
+    </footer>
 </body>
 </html>
