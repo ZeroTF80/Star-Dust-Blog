@@ -17,7 +17,7 @@ body {
   position: relative; /* Añadir posicionamiento relativo */
   animation: slideFromRight 1s forwards; /* Aplicar animación */
   margin: 10px auto 20px auto; /* Margen superior e inferior automáticos, margen izquierdo y derecho automáticos */
-  max-width: 40%; /* Opcional: limitar el ancho máximo del texto */
+  max-width: 38%; /* Opcional: limitar el ancho máximo del texto */
   text-align: right; /* Centrar el texto horizontalmente */
 }
 
