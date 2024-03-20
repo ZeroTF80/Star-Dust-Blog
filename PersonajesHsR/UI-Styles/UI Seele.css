@@ -1,9 +1,10 @@
-body.background-container {
-  background-image: url('../../Img/BackgroundHsR.jpg');
-  background-color: rgba(7, 12, 11, 0.5);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px); /* For Safari */
-  color: white;
+/*Background */
+body {
+  margin: 0; /* Restablecer el margen a 0 */
+  padding: 0; /* Restablecer el relleno a 0 */
+  background-image: url('../../Img/BackgroundHsR.jpeg'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajustar la imagen de fondo para cubrir todo el área del elemento */
+  background-position: center; /* Centrar la imagen de fondo */
 }
 
 .transparent-text {
@@ -12,24 +13,29 @@ body.background-container {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 10px;
-  width: 20%;
-  margin: 1 auto;
-  text-align: left; /* align the text to the left */
+  border-radius: 25px;
+  position: relative; /* Añadir posicionamiento relativo */
+  animation: slideFromRight 1s forwards; /* Aplicar animación */
+  margin: 10px auto 20px auto; /* Margen superior e inferior automáticos, margen izquierdo y derecho automáticos */
+  max-width: 40%; /* Opcional: limitar el ancho máximo del texto */
+  text-align: right; /* Centrar el texto horizontalmente */
 }
 
-/*Para que el texto no ande pegado a la izquierda */
+@keyframes slideFromRight {
+  from {
+    left: 100%; /* Iniciar desde la derecha */
+  }
+  to {
+    left: 50%; /* Desplazarse hacia el centro */
+    transform: translateX(-50%); /* Ajustar para centrar completamente */
+  }
+}
+
 .indent {
   padding-left: 15px;
 }
 
-/* Restablecimiento espacio, borde de los elementos */
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/* Diseño del titulo */
+/* Estilos de encabezado */
 header {
   background-color: #333;
   height: 130px;
@@ -38,14 +44,14 @@ header {
   justify-content: center;
 }
 
-/* Color del titulo*/
 header h1 {
   color: #fff;
   font-size: 36px;
   margin-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Contorno */
 }
 
-/* Diseño del apartado de arriba */
+/* Estilos de navegación */
 nav {
   background-color: #444;
   height: 60px;
@@ -53,7 +59,6 @@ nav {
   align-items: center;
 }
 
-/* Ubicación del apartado de arriba (Arriba, abajo*/
 nav ul {
   list-style-type: none;
   display: flex;
@@ -62,49 +67,59 @@ nav ul {
   margin: 0;
 }
 
-/* Ubicación del apartado de arriba (Izquierda, derecha) */
 nav ul li {
   padding: 0 20px;
 }
 
-/* Color del apartado de arriba */
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
-
 
 /* Tamaño de los titulos */
 .Seele-title {
   font-size: 80px;
   color: #fff;
   height: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Contorno */
 }
 
-/* Front Habilidades */
-header#Habilidades {
-  background-color: transparent;
-  height: 30px;
+.title-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-start;
+}
+.title-left {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 70px;
+  color: #fff;
+  height: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Contorno */
+}
+.title-right {
+  text-align: right;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 70px;
+  color: #fff;
+  height: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Contorno */
 }
 
-header#Habilidades h1 {
-  font-size: 50px;
-  color: #ffffff;
-  margin-bottom: -30px;
-}
-
-/* Habilidades */
 .Habilidad1Nombre-title,
 .Habilidad2Nombre-title,
 .Habilidad3Nombre-title,
 .TalentoNombre-title,
 .TécnicaNombre-title {
-  font-size: 30px;
+  font-size: 50px;
   height: 10px;
-  color: #17bdf0;
+  color: #5dd5fd;
+  display: flex;
+  justify-content: right;
+  margin-right: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Contorno */
 }
 
 .Habilidad1Características-title,
@@ -112,11 +127,16 @@ header#Habilidades h1 {
 .Habilidad3Características-title,
 .TalentoCaracterísticas-title,
 .TécnicaCaracterísticas-title {
-  font-size: 18px;
+  font-size: 25px;
   height: 10px;
-  color: #2f90b7;
+  color: #5dd5fd;
+  display: flex;
+  justify-content: right;
+  margin-right: 25px; /* Agrega espacio a la derecha */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Contorno */
 }
 
+/* Estilos de pie de página */
 footer {
   background-color: #282828;
   color: #fdfdfd;
