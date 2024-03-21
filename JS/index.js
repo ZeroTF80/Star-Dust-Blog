@@ -1,10 +1,10 @@
-{// Update the document title
+{// Titulo
   document.title = 'StarDust Blog';
 }
 
 // Garantiza que todos los elementos HTML se carguen antes de ejecutar el código JavaScript
 window.onload = function() {
-  
+
  {// Encabezado
   const header = document.getElementById('Encabezado');
   const Encabezado = document.createElement('h1');
