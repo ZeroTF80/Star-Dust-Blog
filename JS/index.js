@@ -4,7 +4,7 @@
 
 // Garantiza que todos los elementos HTML se carguen antes de ejecutar el código JavaScript
 window.onload = function() {
-
+  
  {// Encabezado
   const header = document.getElementById('Encabezado');
   const Encabezado = document.createElement('h1');
@@ -12,7 +12,6 @@ window.onload = function() {
   header.appendChild(Encabezado);
   Encabezado.textContent = 'Star Dust Blog';
  }
-
  {// TituloUno HsR
   const header = document.getElementById('TituloUno');
   const TituloUno = document.createElement('h1');
@@ -20,7 +19,6 @@ window.onload = function() {
   header.appendChild(TituloUno);
   TituloUno.textContent = 'Honkai Star Rail';
  }
-
  {// Categorías HsR
   const damageDealer = document.getElementById('Damage Dealer');
   damageDealer.textContent = 'Damage Dealer';
